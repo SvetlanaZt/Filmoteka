@@ -1,0 +1,78 @@
+.my-library {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+    url(../images/backgrounds/header-mylib-background-320.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(../images/backgrounds/header-mylib-background-320@2x.jpg);
+  }
+
+  @include respondTo(mobile) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(../images/backgrounds/header-mylib-background-768.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+        url(../images/backgrounds/header-mylib-background-768@2x.jpg);
+    }
+  }
+
+  @include respondTo(tablet) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(../images/backgrounds/header-mylib-background-1024.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+        url(../images/backgrounds/header-mylib-background-1024@2x.jpg);
+    }
+  }
+
+
+   &__buttons-item {
+//     margin-left: 40px;
+//   }
+
+//   &__button {
+//     position: relative;
+//     padding-top: 0;
+//     padding-bottom: 5px;
+//     padding-left: 0;
+//     padding-right: 0;
+//     font-family: inherit;
+//     font-weight: 500;
+//     font-size: 12px;
+//     line-height: 14px;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     text-transform: uppercase;
+//     // color: beige;
+//     background-color: transparent;
+//     border: none;
+
+//     &:disabled {
+//       &::after {
+//         content: '';
+//         position: absolute;
+//         width: 100%;
+//         left: 0;
+//         bottom: 0;
+//         background: red;
+//         border-bottom: 3px solid goldenrod;
+//       }
+//     }
+
+//   }
+// }

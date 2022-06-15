@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./header.css" />
+</head>
+<body>
+
+<header id="header" class="site-header">
+    <div class="site-header__container">
+        <a id="logo" class="site-header__logo" href="#">
+            <svg class="site-header__svg" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-film"></use>
+            </svg>
+            <span id="logo-name" class="site-header__name">Filmoteka</span>
+        </a>
+        <nav class="site-header__nav"></nav>
+        <ul class="site-header__items">
+            <li class="site-header__item">HOME</li>
+            <li class="site-header__item">MY LIBRARY</li>
+        </ul>
+        </nav>
+    </div>
+    <div id="search-form" class="search-form js-hidden">
+        <input id="search-form" class="search-form__input" type="search" name="search" placeholder="Search movies" />
+    </div>
+    </header>
+    <script src='./index.js'></script>
+</body>
