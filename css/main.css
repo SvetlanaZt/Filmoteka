@@ -1,0 +1,127 @@
+.site-header {
+  height: 230px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 44px 20px 5px 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../img/mob.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .site-header {
+    min-width: 768px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../img/tab.jpg);
+    padding: 44px 32px 5px 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .site-header {
+    min-width: 1024px;
+    height: 216px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../img/desk.jpg);
+  }
+}
+
+.site-header__container {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.site-header__logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .site-header__name {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-header__name {
+    font-size: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    color: #FFFFFF;
+  }
+}
+
+.site-header__items {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header__item {
+  margin-left: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 280px;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-form {
+    width: 336px;
+  }
+}
+
+.search-form__input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  width: 280px;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .search-form__input {
+    width: 336px;
+  }
+}
+
+.search-form__svg {
+  position: absolute;
+  bottom: 5;
+  right: 0;
+}
+
+.search-form::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=main.css.map */

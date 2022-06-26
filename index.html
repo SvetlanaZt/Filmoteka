@@ -7,8 +7,9 @@
     <title>Filmoteka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
 
@@ -27,9 +28,32 @@
         </ul>
         </nav>
     </div>
-    <div id="search-form" class="search-form js-hidden">
-        <input id="search-form" class="search-form__input" type="search" name="search" placeholder="Search movies" />
+    <div class="search-form js-hidden">
+        <form class="search-form" id="search-form">
+            <input class="search-form__input" type="search" name="search" placeholder="Search movies" />
+            <ul class="search-form__list"></ul>
+        </form>
     </div>
     </header>
-    <script src='./index.js'></script>
+    <!-- ------------------------------------------------- -->
+    <main>
+        <div class="home">
+            <ul class="home__list" id="home__list"></ul>
+        </div>
+        </main>
+        <!-- ------------------------------------------------- -->
+    <!-- FOOTER -->
+    <div class ='footer'>
+<p>© 2020 | All Rights Reserved |</p>
+<p>Developed with</p>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 32 32">
+    <title>Vector-11</title>
+    <path fill="#ff6b08"
+        d="M16 30.144l-2.24-2.218c-8.32-7.287-13.76-12.198-13.76-18.218 0-4.911 3.84-8.713 8.8-8.713 2.72 0 5.44 1.267 7.2 3.327 1.76-2.059 4.48-3.327 7.2-3.327 4.96 0 8.8 3.802 8.8 8.713 0 6.020-5.44 10.931-13.76 18.218l-2.24 2.218z">
+    </path>
+</svg>
+<p>by GoIT Students</p>
+    </div>
+        <script src='./index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </body>
